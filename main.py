@@ -18,7 +18,7 @@ from imgurpython import ImgurClient
 # Initialize appearance mode for customtkinter
 customtkinter.set_appearance_mode("System")
 customtkinter.set_appearance_mode("dark")
-customtkinter.set_default_color_theme("MoonlitSky.json")
+customtkinter.set_default_color_theme("theme/MoonlitSky.json")
 
 # Initialize main application window
 app = customtkinter.CTk(fg_color="black")
@@ -137,7 +137,7 @@ def top_widgets():
     copy_button.place( x=372.0,
     y=81.0,)
     button_image_4 = tk.PhotoImage(
-    file=("C:/Users/User/Desktop/School/neuralstyleproject/images/button_4.png"))
+    file=("C:/Users/User/Desktop/School/neuralstyleproject/final/images/button_4.png"))
     backbutton = customtkinter.CTkButton(toplevel,text="",command=back_event,image=button_image_4,border_width=0,fg_color="transparent",width=17)
     backbutton.place(x=372.0,y=243.0)
 
