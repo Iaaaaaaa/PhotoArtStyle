@@ -114,7 +114,7 @@ def top_widgets():
     image_label3 = customtkinter.CTkLabel(toplevel, image=displayoutput, text="",fg_color="White",width=355,height=405)
     image_label3.place(x = 5, y = 5)
     button_image_1 = tk.PhotoImage(
-    file=("C:/Users/User/Desktop/School/neuralstyleproject/final/images/button_3.png"))
+    file=("images/button_3.png"))
     facebook_button = customtkinter.CTkButton(
         toplevel,text="", command=sharefbthread,image=button_image_1,border_width=0,fg_color="transparent",width=17
     )
@@ -123,21 +123,21 @@ def top_widgets():
     y=135.0,
     )
     button_image_2 = tk.PhotoImage(
-    file=("C:/Users/User/Desktop/School/neuralstyleproject/final/images/button_1.png"))
+    file=("images/button_1.png"))
     twitter_button = customtkinter.CTkButton(
         toplevel, text="", command=sharetwthread,image=button_image_2,border_width=0,fg_color="transparent",width=17
     )
     twitter_button.place(x=372.0,
     y=189.0,)
     button_image_3 = tk.PhotoImage(
-    file=("C:/Users/User/Desktop/School/neuralstyleproject/final/images/button_2.png"))
+    file=("images/button_2.png"))
     copy_button = customtkinter.CTkButton(
         toplevel, text="", command=sharecpthread,image=button_image_3,border_width=0,fg_color="transparent",width=17
     )
     copy_button.place( x=372.0,
     y=81.0,)
     button_image_4 = tk.PhotoImage(
-    file=("C:/Users/User/Desktop/School/neuralstyleproject/final/images/button_4.png"))
+    file=("images/button_4.png"))
     backbutton = customtkinter.CTkButton(toplevel,text="",command=back_event,image=button_image_4,border_width=0,fg_color="transparent",width=17)
     backbutton.place(x=372.0,y=243.0)
 
@@ -417,7 +417,7 @@ def copy_imgur_link(imgur_link):
 button1 = customtkinter.CTkButton(app, text="Select Content Image", command=content_event)
 button1.grid(row=3, column=2, padx=10, pady=5)
 
-placeholder_image1 = Image.open("C:/Users/User/Desktop/School/neuralstyleproject/final/images/imgholder.jpg")
+placeholder_image1 = Image.open("images/imgholder.jpg")
 placeholder_image_to_display1 = customtkinter.CTkImage(placeholder_image1, size=(300, 300))
 image_label1 = customtkinter.CTkLabel(app, image=placeholder_image_to_display1, text="",fg_color="White",width=310,height=310)
 image_label1.grid(row=2, column=2, padx=50, pady=30)
@@ -425,7 +425,7 @@ image_label1.grid(row=2, column=2, padx=50, pady=30)
 button2 = customtkinter.CTkButton(app, text="Select Style Image", command=style_event)
 button2.grid(row=3, column=4, padx=10, pady=5)
 
-placeholder_image2 = Image.open("C:/Users/User/Desktop/School/neuralstyleproject/final/images/imgholder.jpg")
+placeholder_image2 = Image.open("images/imgholder.jpg")
 placeholder_image_to_display2 = customtkinter.CTkImage(placeholder_image2, size=(300, 300))
 image_label2 = customtkinter.CTkLabel(app, image=placeholder_image_to_display2, text="",fg_color="White",width=310,height=310)
 image_label2.grid(row=2, column=4, padx=50, pady=30)
