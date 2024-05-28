@@ -374,6 +374,7 @@ def neural_style_transfer():
         counter += 1
 
     global displayimg
+    displayimg = ""
     displayimg = f'{outputs_dir}/output{counter}.png'
     if not clicked:
         button3.configure(text="Start Styling", command=neuralthread)
@@ -383,6 +384,7 @@ def neural_style_transfer():
         horizontal_label.grid(row=6, column=3)
         horizontal_label2.grid(row=4, column=3)
         app.withdraw()
+        imgur_link = ""
         imgur_link = upload_image_to_imgur(displayimg)
         create_top()
         app.wait_window(toplevel)
@@ -390,8 +392,8 @@ def neural_style_transfer():
 
 # Function to upload styled image to Imgur and get the link
 def upload_image_to_imgur(displayimg):
-    client_id = '9a3ec0ee4b97b64'
-    client_secret = '4fba82309dd56809b0eaa54bd826c9f741a3033e'
+    client_id = ''
+    client_secret = ''
     client = ImgurClient(client_id, client_secret)
     image = client.upload_from_path(displayimg, anon=True)
     return image['link']
